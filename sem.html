@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form id="registerForm">
+
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <input
+            type="tel"
+            id="mobile"
+            placeholder="Mobile Number"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            required
+        >
+
+        <p id="mobileMessage"></p>
+
+        <input type="text" placeholder="Username" required>
+
+        <input type="date" required>
+
+        <div class="gender">
+            <label><input type="radio" name="gender" required> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+
+        <input type="password" id="password" placeholder="Password" required>
+
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+        <p id="passwordMessage"></p>
+
+        <label class="checkbox">
+            <input type="checkbox" required>
+            I Agree to Terms & Conditions
+        </label>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
